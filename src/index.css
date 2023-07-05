@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.back-primary{
+  background-color: #c6ac8f;
+}
+.back-nav{
+  background-color: #5e503f;
+}
+.back-sec{
+  background-color: #eae0d5;
+}
+
+.app {
+  display: flex;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  /* Add any additional styles for the main content */
+}
+
