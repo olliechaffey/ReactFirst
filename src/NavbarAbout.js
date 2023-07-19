@@ -5,7 +5,7 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg back-nav">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
         <a className="nav-link co-name disabled" href="#">Ollie Chaffey</a>
         <ul className="navbar-nav ml-auto">
@@ -13,10 +13,13 @@ const Navbar = () => {
             <a className="nav-link co-inactive" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link co-white" href="/projects">Projects</a>
+            <a className="nav-link co-inactive" href="/projects">Projects</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link co-inactive" href="#">About</a>
+            <a className="nav-link co-inactive" href="/projects">Services</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link co-white" href="/about">About</a>
           </li>
           <li className="nav-item">
             <a className="nav-link co-inactive" href="#">Blog</a>

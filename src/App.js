@@ -1,19 +1,24 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-// import reportWebVitals from './reportWebVitals';
-import Navbar from './Navbar.js';
-import SignUp from './signupSection.js';
-import AppDesc from './appDescSection.js';
+import Home from './home';
+import Projects from './projects';
+import WeatherPage from './weatherPage';
+import AboutPage from './aboutPage';
+import CodeRunner from './CodeRunner';
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <div className="main-content">
-    <SignUp />
-    <AppDesc />
-  </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/weatherApp" element={<WeatherPage />} />
+          <Route path="/CodeRunner" element={<CodeRunner />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

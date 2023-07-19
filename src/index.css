@@ -1,10 +1,23 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 code {
@@ -12,30 +25,186 @@ code {
     monospace;
 }
 
-.back-primary{
-  background-color: #c6ac8f;
+.card-container{
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+}
+
+.c-title{
+  color: #778DA9;
+  font-size: medium;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+.c-title:hover{
+  color: white;
+}
+
+.card-s{
+  max-width: 250px;
+  max-height: 250px;
+  background-color: transparent !important;
+}
+
+.card-s2{
+  max-width: 100px;
+  max-height: 100px;
+  background-color: transparent !important;
+}
+
+.card-body-s{
+  background-color: #1B263B;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.card-link{
+  color: white;
+  text-decoration: none !important;
+}
+
+.background-col{
+  background-color: #0D1B2A;
+}
+.background-white{
+  background-color: white;
 }
 .back-nav{
-  background-color: #5e503f;
+  background-color: #1B263B;
 }
 .back-sec{
   background-color: #eae0d5;
 }
 
-.app {
+.co-white{
+  color: #FFFFFF !important;
+}
+.co-job{
+  color: #FF6800;
+}
+.co-title{
+  color: #778DA9 !important;
+  text-decoration: none;
+}
+.co-name{
+  color: black !important;
+  font-size: 20px !important;
+}
+.co-nav{
+  color: black !important;
+  font-family: 'Inter-Bold', sans-serif !important;
+}
+.co-inactive{
+  color: #778DA9 !important;
+}
+.co-inactive:hover{
+  color: #FFFFFF !important;
+}
+
+.gamesTitle{
   display: flex;
-  height: 100vh; /* Adjust the height as needed */
+  justify-content: center;
 }
 
-.sidebar {
-  width: 200px;
-  background-color: #f1f1f1;
-  padding: 20px;
+.thumbnail {
+  border: 0;
+  border-radius: 10px;
+  padding: 2px;
 }
 
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  /* Add any additional styles for the main content */
+.b-icon{
+  padding: 12px;
+  background-color: #0D1B2A;
+  border-radius: 10px;
+}
+
+.b-icon:hover{
+  cursor: pointer;
+}
+
+.double-border {
+  border: 6px solid #FF6800; /* Border style */
+  border-radius: 50%; /* Make the image circular */
+  padding: 8px; /* Padding to create the gap between image and border */
+  width: fit-content;
+}
+
+.double-border-team {
+  border: 6px solid #FF6800; /* Border style */
+  border-radius: 50%; /* Make the image circular */
+  padding: 8px; /* Padding to create the gap between image and border */
+  width: fit-content;
+}
+
+.double-border img {
+  height: 175px;
+}
+
+.heading-3{
+  color: #FF6800;
+  line-height: 75%;
+}
+.heading-1{
+  color: white;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.faq-card {
+  background-color: #1B263B !important;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* 
+.image-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.image-lines img {
+  margin-right: 10px;
+  width: 30px; /* Adjust the size of the small images as needed */
+  height: 30px;
+}
+
+.home-heading{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 85%;
+}
+.ollie{
+  color:#4F8EED;
 }
 
