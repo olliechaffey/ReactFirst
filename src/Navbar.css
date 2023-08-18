@@ -18,8 +18,8 @@
     color: #555;
 }
 
-.link-end {
-    margin-right: 55px !important;
+.nav-margin {
+    margin-right: 60px !important;
 }
 
 .nbar {
@@ -29,15 +29,12 @@
 
 .nav-link {
     display: inline-block !important;
-}
-
-a {
-	color: #18272F;
+    color: #18272F;
   position: relative;
   text-decoration: none;
 }
 
-a::before {
+.nav-link::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -51,7 +48,7 @@ a::before {
   transition: transform .3s ease-in-out;
 }
 
-a:hover::before {
+.nav-link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }

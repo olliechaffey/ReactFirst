@@ -6,7 +6,7 @@ import './Navbar.css'; // Import the custom CSS file
 
 const Navbar = () => {
   return (
-    <div className="container-fluid nbar">
+    <div className="container-fluid margin-m">
       <div className="row">
         <div className="col-lg-6 col-md-12">
           <div className='col-lg-6'>
@@ -20,13 +20,13 @@ const Navbar = () => {
                 <a className="nav-link link co-nav" href="/projects">About</a>
               </div>
               <div className="col-2">
-                <a className="nav-link link co-nav" href="#">Projects</a>
-              </div>
-              <div className="col-2">
                 <a className="nav-link link co-nav" href="#">Contact</a>
               </div>
+              <div className="col-2">
+                <a className="nav-link link co-nav" href="#">Instagram</a>
+              </div>
               <div className="col d-flex justify-content-end">
-              <a className="nav-link link-end disabled" href="#">©2023</a>
+                <a className="nav-link disabled" href="#">©2023</a>
               </div>
             </div>
           </div>

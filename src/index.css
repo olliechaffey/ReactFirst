@@ -200,7 +200,7 @@ code {
 }
 
 .home-heading{
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   line-height: 85%;
 }
@@ -208,3 +208,49 @@ code {
   color:#4F8EED;
 }
 
+.home-section{
+  height: 800px;
+  /* test if works on mobile too */
+}
+
+.title-heading{
+  font-size: 50px;
+  color: black;
+}
+
+.sub-heading{
+  margin-top: 25px;
+}
+
+.co-trans{
+  color: transparent;
+}
+
+.list-none{
+  list-style: none;
+}
+
+.margin-m{
+  margin-top: 20px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.margin-p{
+  margin-top: 25px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  margin-bottom: 25px;
+}
+
+.img-bac {
+	-webkit-filter: sepia(0%);
+	filter: sepia(0%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.img-bac:hover{
+  -webkit-filter: sepia(50%);
+	filter: sepia(50%);
+}
